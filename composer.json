@@ -1,0 +1,23 @@
+{
+    "name": "dominicwatts/usernamelogin",
+    "description": "Username on customer create form with option to login via username",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Dominic Xigen",
+            "email": "xigen.dominic@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Xigen\\UsernameLogin\\": ""
+        }
+    }
+}

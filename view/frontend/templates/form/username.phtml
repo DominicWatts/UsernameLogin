@@ -1,0 +1,16 @@
+<?php
+$username = $block->getCustomer()->getCustomAttribute('username');
+$customerUsername = $username ? $username->getValue() : null;
+?>
+<fieldset class="fieldset create account">
+    <legend class="legend">
+        <span><?= $block->escapeHtmlAttr(__('Username')) ?></span>
+    </legend>
+    <br>
+    <div class="field username">
+        <label for="username" class="label"><span><?= $block->escapeHtmlAttr(__('Username')); ?></span></label>
+        <div class="control">
+            <input id="username" class="input-text" name="username" value="<?= $block->escapeHtmlAttr($customerUsername); ?>" title="<?= $block->escapeHtmlAttr(__('Username')); ?>" type="text" autocomplete="off"/>
+        </div>
+    </div>
+</fieldset>
