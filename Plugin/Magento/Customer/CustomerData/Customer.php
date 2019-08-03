@@ -60,6 +60,4 @@ class Customer
             return false;
         }
     }
-
-
 }
