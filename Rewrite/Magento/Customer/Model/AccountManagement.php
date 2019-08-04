@@ -138,5 +138,4 @@ class AccountManagement extends \Magento\Customer\Model\AccountManagement
         }
         return false;
     }
-    
 }
