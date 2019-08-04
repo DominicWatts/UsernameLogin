@@ -138,4 +138,22 @@ class AccountManagement extends \Magento\Customer\Model\AccountManagement
         }
         return false;
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getDefaultBillingAddress($customerId)
+    {
+        $customer = $this->customerRepository->getById($customerId);
+        return $this->getAddressById($customer, $customer->getDefaultBilling());
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getDefaultShippingAddress($customerId)
+    {
+        $customer = $this->customerRepository->getById($customerId);
+        return $this->getAddressById($customer, $customer->getDefaultShipping());
+    }
 }
