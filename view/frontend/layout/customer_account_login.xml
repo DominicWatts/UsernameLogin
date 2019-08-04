@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/layout_generic.xsd">
     <referenceBlock name="customer_form_login">
-        <action method="setTemplate" >
+        <action method="setTemplate">
             <argument name="template" xsi:type="string">Xigen_UsernameLogin::form/login.phtml</argument>
         </action>
     </referenceBlock>
