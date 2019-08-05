@@ -2,6 +2,8 @@
 
 namespace Xigen\UsernameLogin\Plugin\Magento\Customer\Model;
 
+use Magento\Customer\Model\ResourceModel\Customer\CollectionFactory as CustomerCollectionFactory;
+
 /**
  * Class AccountManagement
  * @package Xigen\UsernameLogin\Plugin\Magento\Customer\Model
