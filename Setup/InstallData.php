@@ -60,7 +60,7 @@ class InstallData implements InstallDataInterface
         );
 
         $attribute = $customerSetup->getEavConfig()->getAttribute(
-            'customer',
+            \Magento\Customer\Model\Customer::ENTITY,
             'username'
         )->addData(
             [
