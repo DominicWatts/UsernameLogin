@@ -31,7 +31,6 @@ class AccountManagement
      */
     public function beforeIsEmailAvailable(\Magento\Customer\Model\AccountManagement $subject, $customerEmail, $websiteId = null)
     {
-
         $checkUsername = $this->getCustomerByUsername($customerEmail);
         if ($checkUsername && $checkUsername->getSize()) {
             $customer = $checkUsername->getFirstItem();
