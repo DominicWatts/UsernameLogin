@@ -22,6 +22,7 @@ class Customer
      * Customer constructor.
      * @param \Magento\Customer\Model\Session\Proxy $customerSession
      */
+    // phpcs:disable
     public function __construct(
         \Magento\Customer\Model\Session\Proxy $customerSession,
         \Magento\Customer\Api\CustomerRepositoryInterface $customerRepositoryInterface
@@ -29,7 +30,7 @@ class Customer
         $this->customerSession = $customerSession;
         $this->customerRepositoryInterface = $customerRepositoryInterface;
     }
-
+    // phpcs:enable
     /**
      * @param \Magento\Customer\CustomerData\Customer $subject
      * @param $result

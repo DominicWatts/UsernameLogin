@@ -6,6 +6,9 @@ use Magento\Framework\Exception\NoSuchEntityException;
 use Magento\Framework\Exception\CouldNotDeleteException;
 use Magento\Framework\Exception\CouldNotSaveException;
 
+/**
+ * Username class
+ */
 class Username extends \Magento\Eav\Model\Entity\Attribute\Backend\AbstractBackend
 {
     /**

@@ -1,5 +1,7 @@
 <?php
 
+// phpcs:disable Magento2.Files.LineLength.MaxExceeded
+
 namespace Xigen\UsernameLogin\Plugin\Magento\Customer\Model;
 
 use Magento\Customer\Model\ResourceModel\Customer\CollectionFactory as CustomerCollectionFactory;

@@ -41,7 +41,8 @@ class InstallData implements InstallDataInterface
 
         $customerSetup->addAttribute(
             \Magento\Customer\Model\Customer::ENTITY,
-            'username', [
+            'username',
+            [
                 'type' => 'varchar',
                 'label' => 'Username',
                 'input' => 'text',
@@ -60,7 +61,7 @@ class InstallData implements InstallDataInterface
         );
 
         $attribute = $customerSetup->getEavConfig()->getAttribute(
-            'customer',
+            \Magento\Customer\Model\Customer::ENTITY,
             'username'
         )->addData(
             [
